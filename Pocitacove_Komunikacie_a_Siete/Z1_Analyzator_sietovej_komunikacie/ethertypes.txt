@@ -1,0 +1,34 @@
+0600 XEROX NS IDP
+0660 DLOG
+0661 DLOG
+0800 IPv4
+0801 X.75 Internet
+0802 NBS Internet
+0803 ECMA Internet
+0804 Chaosnet
+0805 X.25 Level 3
+0806 ARP
+0807 XNS compatability
+0808 Frame Relay ARP
+8035 Reverse ARP
+80f3 AARP, AppleTalk Address Resolution Protocol
+8100 EAPS, Ethernet Automatic Protection Switching
+8137 IPX
+814c SNMP, Simple Network Management Protocol
+86dd IPv6
+8808 MPCP, Multi-Point Control Protocol
+880b PPP, Point-to-Point Protocol
+880c GSMP, General Switch Management Protocol
+8847 MPLS, Multi-Protocol Label Switching (unicast)
+8848 MPLS, Multi-Protocol Label Switching (multicast)
+8863 PPPoE (Discovery Stage)
+8864 PPPoE (PPP Session Stage)
+886f Network Load Balancing
+888e EAPOL, EAP over LAN
+88a2 AoE, ATA over Ethernet
+88a4 EtherCAT
+88ca TIPC, Transparent Inter Process Communication Protocol
+88bb LWAPP, Light Weight Access Point Protocol
+88cc LLDP, Link Layer Discovery Protocol
+88dc WSMP, WAVE Short Message Protocol
+ZZZZ Unknown protocol
