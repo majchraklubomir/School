@@ -1,0 +1,36 @@
+version: '1'
+services:
+  app:
+    build: .
+    depends_on:
+      mydb:
+        condition: service_healthy
+    restart: on-failure
+    ports:
+      - 8080:8080
+    container_name: backend
+
+  mydb:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    healthcheck:
+      test: [ "CMD", "mysqladmin" ,"ping", "-h", "localhost" ]
+      timeout: 5s
+      retries: 10
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: vavjs
+      MYSQL_USER: user
+      MYSQL_PASSWORD: user
+    container_name: mydb
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 3030:8080
+    depends_on:
+      - "mydb"
+    container_name: adminer
+
